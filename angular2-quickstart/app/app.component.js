@@ -12,7 +12,8 @@ var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var hero_service_1 = require('./hero.service');
 var heroes_component_1 = require('./heroes.component');
-var dashboard_component_1 = require("./dashboard.component");
+var dashboard_component_1 = require('./dashboard.component');
+var hero_detail_component_1 = require('./hero-detail.component');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
@@ -20,12 +21,13 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <h1>{{title}}</h1>\n    <nav>\n        <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n        <a [routerLink]=\"['Heroes']\">Heroes</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+            template: "<h1>{{title}}</h1>\n    <nav>\n        <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n        <a [routerLink]=\"['Heroes']\">Heroes</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
             directives: [router_deprecated_1.ROUTER_DIRECTIVES],
             providers: [
                 hero_service_1.HeroService,
                 router_deprecated_1.ROUTER_PROVIDERS
-            ]
+            ],
+            styleUrls: ['app/app.css']
         }),
         router_deprecated_1.RouteConfig([
             {
@@ -38,6 +40,11 @@ var AppComponent = (function () {
                 path: '/heroes',
                 name: 'Heroes',
                 component: heroes_component_1.HeroesComponent
+            },
+            {
+                path: '/detail/:id',
+                name: 'HeroDetail',
+                component: hero_detail_component_1.HeroDetailComponent
             }
         ]), 
         __metadata('design:paramtypes', [])
