@@ -74,8 +74,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.css" />
+    <Content Include="app\dashboard.css" />
     <Content Include="app\dashboard.html" />
+    <Content Include="app\hero-detail.css" />
     <Content Include="app\hero-detail.html" />
+    <Content Include="app\heroes.css" />
+    <Content Include="app\heroes.html" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="index.html" />
@@ -6773,7 +6778,7 @@
     <TypeScriptCompile Include="app\hero.service.ts" />
     <TypeScriptCompile Include="app\hero.ts" />
     <TypeScriptCompile Include="app\main.ts" />
-    <TypeScriptCompile Include="app\mock-heroes.ts" />
+    <TypeScriptCompile Include="app\in-memory-data.service.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\esm\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\esm\src\common_directives.d.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\esm\src\directives.d.ts" />
